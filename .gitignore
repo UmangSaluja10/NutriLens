@@ -1,0 +1,149 @@
+# ============================================================
+# CREDENTIALS & SENSITIVE FILES — NEVER COMMIT THESE
+# ============================================================
+
+# Firebase config — contains API keys
+flutter_app/lib/firebase_options.dart
+flutter_app/android/app/google-services.json
+flutter_app/ios/Runner/GoogleService-Info.plist
+flutter_app/macos/Runner/GoogleService-Info.plist
+
+# Environment files
+.env
+.env.*
+*.env
+
+# Any file with "secret", "key", "credential" in name
+*secret*
+*credentials*
+*api_key*
+
+# ============================================================
+# FLUTTER
+# ============================================================
+
+# Build outputs
+flutter_app/build/
+flutter_app/.dart_tool/
+flutter_app/.flutter-plugins
+flutter_app/.flutter-plugins-dependencies
+
+# Generated files
+flutter_app/*.g.dart
+flutter_app/**/*.g.dart
+flutter_app/pubspec.lock
+
+# IDE
+flutter_app/.idea/
+flutter_app/.vscode/
+flutter_app/**/.DS_Store
+
+# Test coverage
+flutter_app/coverage/
+
+# Web build
+flutter_app/web/
+
+# iOS
+flutter_app/ios/Pods/
+flutter_app/ios/.symlinks/
+flutter_app/ios/Flutter/Flutter.framework
+flutter_app/ios/Flutter/Flutter.podspec
+flutter_app/ios/Runner.xcworkspace/
+
+# Android
+flutter_app/android/.gradle/
+flutter_app/android/local.properties
+flutter_app/android/key.properties
+flutter_app/android/app/debug.keystore
+flutter_app/android/app/release.keystore
+flutter_app/android/*.jks
+
+# macOS
+flutter_app/macos/Pods/
+
+# Windows
+flutter_app/windows/flutter/generated_plugin_registrant.cc
+flutter_app/windows/flutter/generated_plugin_registrant.h
+flutter_app/windows/flutter/generated_plugins.cmake
+
+# Linux
+flutter_app/linux/flutter/generated_plugin_registrant.cc
+flutter_app/linux/flutter/generated_plugin_registrant.h
+flutter_app/linux/flutter/generated_plugins.cmake
+
+# ============================================================
+# PYTHON / FLASK BACKEND
+# ============================================================
+
+# Virtual environment — NEVER commit this (500MB+)
+backend/venv/
+backend/env/
+backend/.venv/
+
+# Python cache
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.Python
+
+# ML model files — too large for GitHub (use Git LFS or share separately)
+backend/model/food_nutrition_model.keras
+backend/model/*.keras
+backend/model/*.h5
+backend/model/*.tflite
+
+# These are fine to commit (small JSON files)
+# backend/model/class_names.json     ← WILL be committed
+# backend/model/nutrition_data.json  ← WILL be committed
+
+# Flask
+backend/instance/
+backend/.webassets-cache
+
+# Jupyter checkpoints (from your Colab work)
+**/.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ============================================================
+# GENERAL
+# ============================================================
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# ============================================================
+# WHAT IS SAFE TO COMMIT (for reference)
+# ============================================================
+# flutter_app/lib/**          (all dart code)
+# flutter_app/pubspec.yaml
+# flutter_app/android/app/src/main/AndroidManifest.xml
+# backend/app.py
+# backend/config.py
+# backend/routes/
+# backend/services/
+# backend/requirements.txt
+# backend/generate_nutrition_data.py
+# backend/model/class_names.json
+# backend/model/nutrition_data.json
+# ml/NutrientApp.ipynb        (your training notebook)
+# README.md

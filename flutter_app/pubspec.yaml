@@ -1,0 +1,29 @@
+name: flutter_app
+description: Smart Food Nutrition Analyzer - NutriLens
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.1.2
+  http: ^1.2.1
+  firebase_core: ^3.3.0
+  cloud_firestore: ^5.2.1
+  firebase_auth: ^5.1.4
+  intl: ^0.19.0
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
