@@ -147,3 +147,7 @@ logs/
 # backend/model/nutrition_data.json
 # ml/NutrientApp.ipynb        (your training notebook)
 # README.md
+
+venv/
+__pycache__/
+*.pyc
