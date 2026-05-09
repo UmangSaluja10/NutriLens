@@ -1,3 +1,6 @@
+plugins {
+    id("com.google.gms.google-services") version "4.3.15" apply false
+}
 allprojects {
     repositories {
         google()
@@ -21,7 +24,4 @@ subprojects {
 
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
-}
-dependencies {
-    classpath 'com.google.gms:google-services:4.4.2'
 }
